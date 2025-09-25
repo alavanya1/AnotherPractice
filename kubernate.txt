@@ -1,0 +1,43 @@
+-->Kubernetes is an open-source platform designed to automate deploying, scaling, and managing containerized applications.
+
+if one machine fails or not available and we deployed the appication how to over come?
+ other machines will spread accross handle and run and deploy(mainanancey and operational is tedeus in case of manual).
+
+3types of networks in docker
+bridge,host,none
+in case of bridge network we can connect only one machine.
+
+docker provides Overly network
+it communicate accross many machines
+
+bridge network is used only single machine or host machine it provide ip information and machine information.
+it provides orchestration  it make available to end user
+
+-->In Kubernetes, orchestration means automatically managing containers
+-->It’s used to describe settings, configurations, or instructions in many tools, especially in Kubernetes, Docker, and CI/CD pipelines.
+
+Detects when a machine (node) fails
+
+Moves the containers (apps) to other healthy machines
+
+Keeps your app running smoothly4
+
+termonologies 
+POD-->is smallest unit .it manage the container.1 or more container.
+Node -->machine (physical or virtual) in a kubernates clusterthat run your application.
+ Each Node contains the tools needed to run Pods
+
+Cluster
+A Kubernetes cluster is a group of computers (called nodes) that work together to run your containerized applications. These nodes can be real machines or virtual ones.
+
+Deployment
+Kubernetes object used to manage a set of Pods running your containerized applications.
+
+Secret
+A Secret is a way to store sensitive information (like passwords, API keys, or tokens) securely in a Kubernetes cluster.
+
+Persistent Volume (PV)
+A Persistent Volume (PV) in Kubernetes is a piece of storage in the cluster that you can use to store data and it doesn’t get deleted when a Pod is removed or restarted.Amazon EBS volumes
+Persistent storage volumes for your data using Amazon Elastic Block Store (Amazon EBS).
+
+
